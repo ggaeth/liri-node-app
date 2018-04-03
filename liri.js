@@ -257,10 +257,10 @@ function moviethis() {
 			name: "movie"
 		}
 	]).then(function(input) {
-		request("http://www.omdbapi.com/?t=" + input.movie + "&y=&plot=short&apikey=40e9cece", function(error, response, body) {
+		request("http://www.omdbapi.com/?t=" + input.movie + "&y=&plot=short&apikey=trilogy", function(error, response, body) {
 			var resp = JSON.parse(body);
 			if (input.movie === "") {
-				request("http://www.omdbapi.com/?t=mr+nobody&y=&plot=short&apikey=40e9cece", function(error, response, body) {
+				request("http://www.omdbapi.com/?t=mr+nobody&y=&plot=short&apikey=trilogy", function(error, response, body) {
 					var res = JSON.parse(body);
 					console.log("\n-------------------------------------------------");
 					console.log("\nDear user, though you did not input anything valid, I, smart Liri, still have recommendation for you.\nActually neither I or my owner Sunny have seen it before, this is her instructor's mandatory recommendation.\nSunny said if one day she becomes an insturctor,\nshe'll use the same way to recommend whatever she likes to students.")
@@ -330,7 +330,7 @@ function dowhat() {
 
 			case 1:
 				// var title = array1[index].replace(" ", "+");
-				request("http://www.omdbapi.com/?t=" + array1[index] + "&y=&plot=short&apikey=40e9cece", function(error, response, body) {
+				request("http://www.omdbapi.com/?t=" + array1[index] + "&y=&plot=short&apikey=trilogy", function(error, response, body) {
 					var resp = JSON.parse(body);
 					console.log("\n-------------------------------------------------");
 					console.log("\nDear user, thanks for trying this new feature.\nWhatever will be popped up are Sunny's beloved songs or movies.\nNow movieing: " + array1[index])
