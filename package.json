@@ -1,0 +1,30 @@
+{
+  "name": "liri-by-gg",
+  "version": "1.4.7",
+  "description": "Liri the node Siri",
+  "main": "keys.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggaeth/liri-node-app.git"
+  },
+  "keywords": [
+    "Liri"
+  ],
+  "author": "Griffin Gaeth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ggaeth/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/ggaeth/liri-node-app#readme",
+  "dependencies": {
+    "inquirer": "^3.2.1",
+    "moment": "^2.18.1",
+    "node-spotify-api": "^1.0.6",
+    "request": "^2.81.0",
+    "spotify": "^0.3.0",
+    "twitter": "^1.7.1"
+  }
+}
